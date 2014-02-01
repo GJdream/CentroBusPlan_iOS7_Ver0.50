@@ -2,8 +2,8 @@
 //  SSProductListTableViewController.m
 //  CENTRO
 //
-//  Created by Silvio Salierno.
-//  Copyright (c) 2013 Silvio Salierno. All rights reserved.
+//  Created by Centro Community Partners.
+//  Copyright (c) 2013 Centro Community Partners. All rights reserved.
 //
 
 #import "SSProductListTableViewController.h"
@@ -64,7 +64,7 @@
     
     self.tableView.delegate = self;
     
-    self.navigationItem.title = @"List of Products";
+    self.navigationItem.title = @"Product List";
     
     self.context = [(id)[[UIApplication sharedApplication] delegate] managedObjectContext];
     

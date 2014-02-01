@@ -2,8 +2,8 @@
 //  SSCompletedPersonalDebtsTableViewController.m
 //  CENTRO
 //
-//  Created by Silvio Salierno.
-//  Copyright (c) 2013 Silvio Salierno. All rights reserved.
+//  Created by Centro Community Partners.
+//  Copyright (c) 2013 Centro Community Partners. All rights reserved.
 //
 
 #import "SSCompletedPersonalDebtsTableViewController.h"
@@ -36,11 +36,18 @@
 }
 
 - (IBAction)tryAgainButtonPressed:(id)sender {
-    [[SSUser currentUser] setSegueToPerform:@"10"];
-    [[SSUser currentUser] setActivityNumberAsIncompleted:@"10"];
-    [self.navigationController popToRootViewControllerAnimated:NO];
-    [self.navigationController.navigationBar popNavigationItemAnimated:NO];
+    
+        [[SSUser currentUser] setActivityNumberAsIncompleted:@"10"];
+        
+        UIStoryboard *profileStoryBoard = [UIStoryboard storyboardWithName: @"personal_debts" bundle:Nil];
+        UIViewController *initProfileView = [profileStoryBoard instantiateInitialViewController];
+        initProfileView.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+        
+        [self.navigationController pushViewController:initProfileView animated:YES];
+        
 }
+    
+
 
 - (void)viewDidLoad
 {

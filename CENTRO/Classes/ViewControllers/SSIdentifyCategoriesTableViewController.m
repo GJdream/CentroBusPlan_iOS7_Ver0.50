@@ -2,8 +2,8 @@
 //  SSIdentifyCategoriesTableViewController.m
 //  CENTRO
 //
-//  Created by Silvio Salierno.
-//  Copyright (c) 2013 Silvio Salierno. All rights reserved.
+//  Created by Centro Community Partners.
+//  Copyright (c) 2013 Centro Community Partners. All rights reserved.
 //
 
 #import "SSIdentifyCategoriesTableViewController.h"
@@ -83,7 +83,7 @@
     NSString *headerString;
     
     if (section == 0) {
-        headerString = @"What are the main categories of products/services? (add 1, up to 3)";
+        headerString = @"What are the main product/services categories? (add 1, up to 3)";
     } else {
         return nil;
     }

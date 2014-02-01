@@ -2,8 +2,8 @@
 //  SSAppDelegate.m
 //  CENTRO
 //
-//  Created by Silvio Salierno.
-//  Copyright (c) 2013 Silvio Salierno. All rights reserved.
+//  Created by Centro Community Partners.
+//  Copyright (c) 2013 Centro Community Partners. All rights reserved.
 //
 
 #import "SSAppDelegate.h"
@@ -27,7 +27,11 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
     UIColor *green = [UIColor colorWithRed:30/255.0f green:67/255.0f blue:11/255.0f alpha:1.0f];
         
     [[UINavigationBar appearance] setTintColor:green];
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIFont fontWithName:@"Helvetica-Bold" size:18.0], NSFontAttributeName, nil]];
 
+    
+    
 //old tabbarcontroller (no longer in use)
 //    UITabBarController *tabBarController = (UITabBarController *) self.window.rootViewController;
 //    

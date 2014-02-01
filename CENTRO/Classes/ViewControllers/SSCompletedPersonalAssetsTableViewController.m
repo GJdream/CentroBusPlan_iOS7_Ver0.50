@@ -2,8 +2,8 @@
 //  SSCompletedPersonalAssetsTableViewController.m
 //  CENTRO
 //
-//  Created by Silvio Salierno.
-//  Copyright (c) 2013 Silvio Salierno. All rights reserved.
+//  Created by Centro Community Partners.
+//  Copyright (c) 2013 Centro Community Partners. All rights reserved.
 //
 
 #import "SSCompletedPersonalAssetsTableViewController.h"
@@ -36,10 +36,20 @@
 }
 
 - (IBAction)tryAgainButtonPressed:(id)sender {
-    [[SSUser currentUser] setSegueToPerform:@"9"];
-    [[SSUser currentUser] setActivityNumberAsIncompleted:@"9"];
-    [self.navigationController popToRootViewControllerAnimated:NO];
-    [self.navigationController.navigationBar popNavigationItemAnimated:NO];
+
+        [[SSUser currentUser] setActivityNumberAsIncompleted:@"9"];
+        
+        UIStoryboard *profileStoryBoard = [UIStoryboard storyboardWithName: @"personal_assets" bundle:Nil];
+        UIViewController *initProfileView = [profileStoryBoard instantiateInitialViewController];
+        initProfileView.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    
+        [self.navigationController pushViewController:initProfileView animated:YES];
+    
+    
+    //[[SSUser currentUser] setSegueToPerform:@"9"];
+    //[[SSUser currentUser] setActivityNumberAsIncompleted:@"9"];
+    //[self.navigationController popToRootViewControllerAnimated:NO];
+    //[self.navigationController.navigationBar popNavigationItemAnimated:NO];
 }
 
 - (void)viewDidLoad
@@ -57,7 +67,7 @@
     }
     self.tableView.backgroundView.contentMode = UIViewContentModeCenter;
     
-    self.navigationItem.title = @"Per. Assets";
+    self.navigationItem.title = @"Personal Assets";
     
     self.tryAgainButton.title = @"Try Again!";
     

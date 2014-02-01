@@ -2,8 +2,8 @@
 //  SSIdentifyPersonalDebtsViewController.m
 //  CENTRO
 //
-//  Created by Silvio Salierno.
-//  Copyright (c) 2013 Silvio Salierno.
+//  Created by Centro Community Partners.
+//  Copyright (c) 2013 Centro Community Partners.
 //
 
 #import "SSIdentifyPersonalDebtsViewController.h"
@@ -35,9 +35,9 @@
 {
     [super viewDidLoad];
     
-    UIImage *bg = [UIImage imageNamed:@"bg.png"];
-    self.backgroundImageView.image = bg;
-    self.backgroundImageView.contentMode = UIViewContentModeCenter;
+    //UIImage *bg = [UIImage imageNamed:@"bg.png"];
+    //self.backgroundImageView.image = bg;
+    //self.backgroundImageView.contentMode = UIViewContentModeCenter;
     
     self.questionLabel.text = @"Do you have the following?";
     

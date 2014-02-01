@@ -2,26 +2,26 @@
 //  SSUtils.h
 //  CENTRO
 //
-//  Created by Silvio Salierno.
-//  Copyright (c) 2013 Silvio Salierno. All rights reserved.
+//  Created by Centro Community Partners.
+//  Copyright (c) 2013 Centro Community Partners. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
 @interface SSUtils : NSObject
 
-+ (NSMutableAttributedString *) attributtedStringForHeaderInTableView: (NSString *) text;
++ (NSMutableAttributedString *) attributedStringForHeaderInTableView: (NSString *) text;
 
-+ (NSMutableAttributedString *) attributtedStringForCellTextOnlyTitle: (NSString *) text;
++ (NSMutableAttributedString *) attributedStringForCellTextOnlyTitle: (NSString *) text;
 
-+ (NSMutableAttributedString *) attributtedStringForTitleCellTextGreen: (NSString *) text;
++ (NSMutableAttributedString *) attributedStringForTitleCellTextGreen: (NSString *) text;
 
-+ (NSMutableAttributedString *) attributtedStringForSubTitleCellTextGray: (NSString *) text;
++ (NSMutableAttributedString *) attributedStringForSubTitleCellTextGray: (NSString *) text;
 
 
-+ (NSMutableAttributedString *) attributtedStringForTitleCellTextGray: (NSString *) text;
++ (NSMutableAttributedString *) attributedStringForTitleCellTextGray: (NSString *) text;
 
-+ (NSMutableAttributedString *) attributtedStringForDetailCellTextGray: (NSString *) text;
++ (NSMutableAttributedString *) attributedStringForDetailCellTextGray: (NSString *) text;
 
 + (void) showAlertViewBasedOnNetworkError: (NSError *) error;
 

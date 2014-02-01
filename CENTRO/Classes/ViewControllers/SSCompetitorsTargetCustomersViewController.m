@@ -2,8 +2,8 @@
 //  SSCompetitorsTargetCustomersViewController.m
 //  CENTRO
 //
-//  Created by Silvio Silvio Salierno.
-//  Copyright (c) 2013 Silvio Salierno. All rights reserved.
+//  Created by Silvio Centro Community Partners.
+//  Copyright (c) 2013 Centro Community Partners. All rights reserved.
 //
 
 #import "SSCompetitorsTargetCustomersViewController.h"

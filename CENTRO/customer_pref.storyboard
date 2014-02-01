@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hEJ-T6-AUf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hEJ-T6-AUf">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -16,11 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tVG-HZ-CYl">
-                                <rect key="frame" x="0.0" y="44" width="320" height="480"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tVG-HZ-CYl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="OR6-xe-qVZ">
-                                <rect key="frame" x="20" y="24" width="280" height="60"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="OR6-xe-qVZ">
+                                <rect key="frame" x="20" y="20" width="280" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="6mO-rF-rp7"/>
                                 </constraints>
@@ -28,8 +28,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5rV-Bj-0GV">
-                                <rect key="frame" x="20" y="205" width="130" height="130"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5rV-Bj-0GV">
+                                <rect key="frame" x="20" y="164" width="130" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="7bD-q3-rfg"/>
                                     <constraint firstAttribute="height" constant="130" id="TcJ-0T-ZyX"/>
@@ -42,8 +42,8 @@
                                     <action selector="leftButtonPressed:" destination="hEJ-T6-AUf" eventType="touchUpInside" id="Hah-6Q-Ud2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Kqj-gf-dpD">
-                                <rect key="frame" x="170" y="205" width="130" height="130"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Kqj-gf-dpD">
+                                <rect key="frame" x="170" y="164" width="130" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="Nbc-qx-MTM"/>
                                 </constraints>
@@ -58,13 +58,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="5rV-Bj-0GV" firstAttribute="top" secondItem="OR6-xe-qVZ" secondAttribute="bottom" constant="84" id="170-Gm-7xg"/>
                             <constraint firstItem="tVG-HZ-CYl" firstAttribute="leading" secondItem="Gar-JH-UFf" secondAttribute="leading" id="1QC-CU-yiH"/>
-                            <constraint firstItem="5rV-Bj-0GV" firstAttribute="top" secondItem="Gar-JH-UFf" secondAttribute="top" constant="164" id="7Jv-Fa-Twc"/>
+                            <constraint firstItem="Kqj-gf-dpD" firstAttribute="leading" secondItem="5rV-Bj-0GV" secondAttribute="trailing" constant="20" id="39v-Tv-3o3"/>
                             <constraint firstItem="OR6-xe-qVZ" firstAttribute="leading" secondItem="Gar-JH-UFf" secondAttribute="leading" constant="20" symbolic="YES" id="C2o-0L-T1x"/>
                             <constraint firstItem="Kqj-gf-dpD" firstAttribute="bottom" secondItem="5rV-Bj-0GV" secondAttribute="bottom" id="E6g-OV-rBT"/>
                             <constraint firstItem="tVG-HZ-CYl" firstAttribute="trailing" secondItem="Gar-JH-UFf" secondAttribute="trailing" id="EvS-pn-CWm"/>
                             <constraint firstItem="5rV-Bj-0GV" firstAttribute="top" secondItem="Kqj-gf-dpD" secondAttribute="top" id="JDx-z9-fN2"/>
                             <constraint firstItem="5rV-Bj-0GV" firstAttribute="leading" secondItem="Gar-JH-UFf" secondAttribute="leading" constant="20" symbolic="YES" id="Mck-Cg-a8h"/>
+                            <constraint firstItem="Kqj-gf-dpD" firstAttribute="top" secondItem="OR6-xe-qVZ" secondAttribute="bottom" constant="84" id="Ocr-Vs-pZd"/>
                             <constraint firstAttribute="trailing" secondItem="OR6-xe-qVZ" secondAttribute="trailing" constant="20" symbolic="YES" id="QmS-zu-XCx"/>
                             <constraint firstAttribute="trailing" secondItem="Kqj-gf-dpD" secondAttribute="trailing" constant="20" symbolic="YES" id="Xhs-FF-7xx"/>
                             <constraint firstItem="tVG-HZ-CYl" firstAttribute="bottom" secondItem="Gar-JH-UFf" secondAttribute="bottom" id="bGj-in-MFW"/>

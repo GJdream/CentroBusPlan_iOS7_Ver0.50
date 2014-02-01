@@ -2,8 +2,8 @@
 //  SSIdentifyBusinessAssetsViewController.m
 //  CENTRO
 //
-//  Created by Silvio Salierno.
-//  Copyright (c) 2013 Silvio Salierno.
+//  Created by Centro Community Partners.
+//  Copyright (c) 2013 Centro Community Partners.
 //
 
 #import "SSIdentifyBusinessAssetsViewController.h"

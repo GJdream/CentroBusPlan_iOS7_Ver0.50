@@ -2,8 +2,8 @@
 //  SSEmployeeCompetencyPerActivityViewController.m
 //  CENTRO
 //
-//  Created by Silvio Salierno.
-//  Copyright (c) 2013 Silvio Salierno. All rights reserved.
+//  Created by Centro Community Partners.
+//  Copyright (c) 2013 Centro Community Partners. All rights reserved.
 //
 
 #import "SSEmployeeCompetencyPerActivityViewController.h"
@@ -84,7 +84,7 @@
     
     UIFont *font = [UIFont boldSystemFontOfSize:11.0f];
     NSDictionary *attributes = [NSDictionary dictionaryWithObject:font forKey:UITextAttributeFont];
-    
+    //NSDictionary *attributes = [NSDictionary dictionaryWithObject:font forKey:NSFontAttributeName];
     [self.frequencySegmentedControl setTitleTextAttributes:attributes forState:UIControlStateNormal];
     
     [self.frequencySegmentedControl setTitle:@"Great" forSegmentAtIndex:2];

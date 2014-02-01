@@ -2,8 +2,8 @@
 //  SSValuePropositionsRankTableViewController.m
 //  CENTRO
 //
-//  Created by Silvio Salierno.
-//  Copyright (c) 2013 Silvio Salierno. All rights reserved.
+//  Created by Centro Community Partners.
+//  Copyright (c) 2013 Centro Community Partners. All rights reserved.
 //
 
 #import "SSValuePropositionsRankTableViewController.h"
@@ -65,7 +65,7 @@ UIImageView *backgroundImageView40 = [[UIImageView alloc] initWithImage:[UIImage
     
     self.navigationItem.title = @"Rank";
     
-    self.titleLabel.text = [NSString stringWithFormat:@"Well done! Here is how %@ ranks compared to its customers.", [SSUtils companyName]];
+    self.titleLabel.text = [NSString stringWithFormat:@"Well done! Here is how %@ ranks compared to its competitors.", [SSUtils companyName]];
     
     self.context = [(id)[[UIApplication sharedApplication] delegate] managedObjectContext];
 }

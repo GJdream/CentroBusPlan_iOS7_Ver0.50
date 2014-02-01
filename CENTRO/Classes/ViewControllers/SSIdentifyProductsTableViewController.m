@@ -2,8 +2,8 @@
 //  SSIdentifyProductsTableViewController.m
 //  CENTRO
 //
-//  Created by Silvio Salierno.
-//  Copyright (c) 2013 Silvio Salierno. All rights reserved.
+//  Created by Centro Community Partners.
+//  Copyright (c) 2013 Centro Community Partners. All rights reserved.
 //
 
 #import "SSIdentifyProductsTableViewController.h"
@@ -51,7 +51,7 @@
             [self updateTableViewForCategory];
         } else {
             [[[UIAlertView alloc] initWithTitle:@"Selection Error"
-                                        message:@"You must select at least 1 Product in this Category."
+                                        message:@"You must select at least 1 Product/Service in this Category."
                                        delegate:nil
                               cancelButtonTitle:@"OK"
                               otherButtonTitles:nil] show];
@@ -63,7 +63,7 @@
         }
         else {
             [[[UIAlertView alloc] initWithTitle:@"Selection Error"
-                                        message:@"You must select at least 1 Product in this Category."
+                                        message:@"You must select at least 1 Product/Service in this Category."
                                        delegate:nil
                               cancelButtonTitle:@"OK"
                               otherButtonTitles:nil] show];
@@ -94,7 +94,7 @@
     
     self.tableView.delegate = self;
     
-    self.navigationItem.title = @"Products";
+    self.navigationItem.title = @"Products/Services";
     
     self.context = [(id)[[UIApplication sharedApplication] delegate] managedObjectContext];
     
@@ -107,7 +107,7 @@
     NSString *headerString;
     
     if (section == 0) {
-        headerString = [NSString stringWithFormat:@"What are the top selling %@ products? (add 1, up to 10)", [self.fetchedCategories[self.categoryPos] name]];
+        headerString = [NSString stringWithFormat:@"What are the top selling %@ products/services? (add 1, up to 10)", [self.fetchedCategories[self.categoryPos] name]];
     } else {
         return nil;
     }

@@ -2,8 +2,8 @@
 //  SSUtils.m
 //  CENTRO
 //
-//  Created by Silvio Salierno.
-//  Copyright (c) 2013 Silvio Salierno. All rights reserved.
+//  Created by Centro Community Partners.
+//  Copyright (c) 2013 Centro Community Partners. All rights reserved.
 //
 
 #import "SSUtils.h"
@@ -13,7 +13,7 @@
 
 @implementation SSUtils
 
-+ (NSMutableAttributedString *) attributtedStringForHeaderInTableView: (NSString *) text
++ (NSMutableAttributedString *) attributedStringForHeaderInTableView: (NSString *) text
 {
     if(text == nil) {
         text = @"";
@@ -31,7 +31,7 @@
     return attString;
 }
 
-+ (NSMutableAttributedString *) attributtedStringForCellTextOnlyTitle: (NSString *) text
++ (NSMutableAttributedString *) attributedStringForCellTextOnlyTitle: (NSString *) text
 {
     if(text == nil) {
         text = @"";
@@ -50,7 +50,7 @@
     return attString;
 }
 
-+ (NSMutableAttributedString *) attributtedStringForTitleCellTextGreen: (NSString *) text
++ (NSMutableAttributedString *) attributedStringForTitleCellTextGreen: (NSString *) text
 {
     if(text == nil) {
         text = @"";
@@ -59,17 +59,17 @@
     NSMutableAttributedString *attString = [[NSMutableAttributedString alloc] initWithString:text];
     NSInteger _stringLength = [text length];
     
-    UIColor *fontColor = [UIColor colorWithRed:145.0/255.0 green:172.0/255.0 blue:51.0/255.0 alpha:1.00];
+    //UIColor *fontColor = [UIColor colorWithRed:145.0/255.0 green:172.0/255.0 blue:51.0/255.0 alpha:1.00];
     UIFont *font=[UIFont fontWithName:@"Helvetica-Bold" size:17.0f];
     
     
     [attString addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, _stringLength)];
-    [attString addAttribute:NSForegroundColorAttributeName value:fontColor range:NSMakeRange(0, _stringLength)];
+    //[attString addAttribute:NSForegroundColorAttributeName value:fontColor range:NSMakeRange(0, _stringLength)];
     
     return attString;
 }
 
-+ (NSMutableAttributedString *) attributtedStringForSubTitleCellTextGray: (NSString *) text
++ (NSMutableAttributedString *) attributedStringForSubTitleCellTextGray: (NSString *) text
 {
     if(text == nil) {
         text = @"";
@@ -89,7 +89,7 @@
 }
 
 
-+ (NSMutableAttributedString *) attributtedStringForTitleCellTextGray: (NSString *) text
++ (NSMutableAttributedString *) attributedStringForTitleCellTextGray: (NSString *) text
 {
     if(text == nil) {
         text = @"";
@@ -108,7 +108,7 @@
     return attString;
 }
 
-+ (NSMutableAttributedString *) attributtedStringForDetailCellTextGray: (NSString *) text
++ (NSMutableAttributedString *) attributedStringForDetailCellTextGray: (NSString *) text
 {
     if(text == nil) {
         text = @"";

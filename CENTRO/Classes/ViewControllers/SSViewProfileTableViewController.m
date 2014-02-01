@@ -2,8 +2,8 @@
 //  SSViewProfileTableViewController.m
 //  CENTRO
 //
-//  Created by Silvio Salierno.
-//  Copyright (c) 2013 Silvio Salierno. All rights reserved.
+//  Created by Centro Community Partners.
+//  Copyright (c) 2013 Centro Community Partners. All rights reserved.
 //
 
 #import "SSViewProfileTableViewController.h"
@@ -60,40 +60,40 @@
         NSString *lastName = self.student.lastName;
     
         NSString *fullName = [NSString stringWithFormat:@"%@ %@", firstName, lastName];
-        self.profileSummaryCell.textLabel.attributedText = [SSUtils attributtedStringForTitleCellTextGreen:fullName];
-        self.profileSummaryCell.detailTextLabel.attributedText = [SSUtils attributtedStringForSubTitleCellTextGray:[[SSUser currentUser] username]];
+        self.profileSummaryCell.textLabel.attributedText = [SSUtils attributedStringForTitleCellTextGreen:fullName];
+        self.profileSummaryCell.detailTextLabel.attributedText = [SSUtils attributedStringForSubTitleCellTextGray:[[SSUser currentUser] username]];
 
         return self.profileSummaryCell;
     } else if ([indexPath isEqual:preferredNameIP]) {
-        self.preferredNameCell.textLabel.attributedText = [SSUtils attributtedStringForTitleCellTextGray:@"Preferred Name"];
-        self.preferredNameCell.detailTextLabel.attributedText = [SSUtils attributtedStringForDetailCellTextGray:self.student.preferredName];
+        self.preferredNameCell.textLabel.attributedText = [SSUtils attributedStringForTitleCellTextGray:@"Preferred Name"];
+        self.preferredNameCell.detailTextLabel.attributedText = [SSUtils attributedStringForDetailCellTextGray:self.student.preferredName];
 
         return self.preferredNameCell;
     } else if ([indexPath isEqual:genderIP]) {
-        self.genderCell.textLabel.attributedText = [SSUtils attributtedStringForTitleCellTextGray:@"Gender"];
+        self.genderCell.textLabel.attributedText = [SSUtils attributedStringForTitleCellTextGray:@"Gender"];
        
         if ([self.student.gender isEqualToString:@"F"]) {
-            self.genderCell.detailTextLabel.attributedText = [SSUtils attributtedStringForDetailCellTextGray:@"Female"];
+            self.genderCell.detailTextLabel.attributedText = [SSUtils attributedStringForDetailCellTextGray:@"Female"];
         } else if([self.student.gender isEqualToString:@"M"]) {
-            self.genderCell.detailTextLabel.attributedText = [SSUtils attributtedStringForDetailCellTextGray:@"Male"];
+            self.genderCell.detailTextLabel.attributedText = [SSUtils attributedStringForDetailCellTextGray:@"Male"];
         }
         
         return self.genderCell;
     } else if ([indexPath isEqual:dateOfBirthIP]) {
-        self.dateOfBirthCell.textLabel.attributedText = [SSUtils attributtedStringForTitleCellTextGray:@"Date of Birth"];
-        self.dateOfBirthCell.detailTextLabel.attributedText = [SSUtils attributtedStringForDetailCellTextGray:[NSDateFormatter localizedStringFromDate:self.student.dateOfBirth dateStyle:NSDateFormatterMediumStyle timeStyle:NSDateFormatterNoStyle]];
+        self.dateOfBirthCell.textLabel.attributedText = [SSUtils attributedStringForTitleCellTextGray:@"Date of Birth"];
+        self.dateOfBirthCell.detailTextLabel.attributedText = [SSUtils attributedStringForDetailCellTextGray:[NSDateFormatter localizedStringFromDate:self.student.dateOfBirth dateStyle:NSDateFormatterMediumStyle timeStyle:NSDateFormatterNoStyle]];
         return self.dateOfBirthCell;
     } else if([indexPath isEqual:phoneTypeAndNumberIP]) {
         
         if ([self.student.phoneType isEqualToString:@"H"]) {
-            self.phoneTypeAndNumberCell.textLabel.attributedText = [SSUtils attributtedStringForTitleCellTextGray:@"Home Phone"];
+            self.phoneTypeAndNumberCell.textLabel.attributedText = [SSUtils attributedStringForTitleCellTextGray:@"Home Phone"];
         } else if([self.student.phoneType isEqualToString:@"O"]) {
-            self.phoneTypeAndNumberCell.textLabel.attributedText = [SSUtils attributtedStringForTitleCellTextGray:@"Office Phone"];
+            self.phoneTypeAndNumberCell.textLabel.attributedText = [SSUtils attributedStringForTitleCellTextGray:@"Office Phone"];
         } else if([self.student.phoneType isEqualToString:@"M"]) {
-            self.phoneTypeAndNumberCell.textLabel.attributedText = [SSUtils attributtedStringForTitleCellTextGray:@"Mobile Phone"];
+            self.phoneTypeAndNumberCell.textLabel.attributedText = [SSUtils attributedStringForTitleCellTextGray:@"Mobile Phone"];
         }
         
-        self.phoneTypeAndNumberCell.detailTextLabel.attributedText = [SSUtils attributtedStringForDetailCellTextGray:self.student.phoneNumber];
+        self.phoneTypeAndNumberCell.detailTextLabel.attributedText = [SSUtils attributedStringForDetailCellTextGray:self.student.phoneNumber];
         
         return self.phoneTypeAndNumberCell;
     } else {
@@ -114,7 +114,7 @@
         return nil;
     }
     
-    headerLabel.attributedText = [SSUtils attributtedStringForHeaderInTableView:headerString];
+    headerLabel.attributedText = [SSUtils attributedStringForHeaderInTableView:headerString];
     [headerLabel setBackgroundColor:[UIColor clearColor]];
     
     return headerLabel;

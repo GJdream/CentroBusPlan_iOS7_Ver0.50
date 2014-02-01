@@ -2,8 +2,8 @@
 //  SSBusinessIncomeAmountsViewController.m
 //  CENTRO
 //
-//  Created by Silvio Salierno.
-//  Copyright (c) 2013 Silvio Salierno. All rights reserved.
+//  Created by Centro Community Partners.
+//  Copyright (c) 2013 Centro Community Partners. All rights reserved.
 //
 
 #import "SSBusinessIncomeAmountsViewController.h"
@@ -249,5 +249,6 @@
 -(IBAction)dismissVC{
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
+
 
 @end

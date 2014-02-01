@@ -2,8 +2,8 @@
 //  SSRankValuePairsViewController.m
 //  CENTRO
 //
-//  Created by Silvio Salierno.
-//  Copyright (c) 2013 Silvio Salierno. All rights reserved.
+//  Created by Centro Community Partners.
+//  Copyright (c) 2013 Centro Community Partners. All rights reserved.
 //
 
 #import "SSRankValuePairsViewController.h"
@@ -44,8 +44,8 @@
 {
     [super viewDidLoad];
     
-    UIImage *bg40 = [UIImage imageNamed:@"bg-568h@2x.png"];
-    UIImage *bg35R = [UIImage imageNamed:@"bg.png"];
+//   UIImage *bg40 = [UIImage imageNamed:@"bg-568h@2x.png"];
+//   UIImage *bg35R = [UIImage imageNamed:@"bg.png"];
     
 //    CGRect screenBounds = [[UIScreen mainScreen] bounds];
 //    if (screenBounds.size.height == 505) {

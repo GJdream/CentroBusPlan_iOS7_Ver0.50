@@ -2,8 +2,8 @@
 //  SSAboutCENTROViewController.m
 //  CENTRO
 //
-//  Created by Silvio Salierno.
-//  Copyright (c) 2013 Silvio Salierno. All rights reserved.
+//  Created by Centro Community Partners.
+//  Copyright (c) 2013 Centro Community Partners. All rights reserved.
 //
 
 #import "SSAboutCENTROViewController.h"
@@ -43,7 +43,8 @@
     NSString *version = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
     NSString *build = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];
     
-    self.aboutTextView.text = [NSString stringWithFormat:@"Centro Community Partners is a leading entrepreneurship training provider.\n\nThis app is the first step toward creating your business plan.\n\nPlease send any feedback to comments@centrocommunity.org\n\nVersion: %@. Build: %@.", version, build];
+    self.aboutTextView.text = [NSString stringWithFormat:@"Centro Community Partners is a leading provider of entrepreneurship education and training support.  Our goal is to provide entrepreneurs with tools to grow their businesses and access capital.\n\nWe welcome you to use this app as a first step toward creating your business plan.  We hope you find it useful and welcome all feedback at comments@centrocommunity.org\n\nPTo learn about partnership licensing opportunities, contact partners@centrocommunity.org\n\nVersion: %@. Build: %@.", version, build];
+
 }
 
 - (void)didReceiveMemoryWarning

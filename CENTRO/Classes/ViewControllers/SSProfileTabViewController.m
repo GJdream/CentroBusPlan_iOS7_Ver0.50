@@ -2,8 +2,8 @@
 //  SSProfileTabViewController.m
 //  CENTRO
 //
-//  Created by Silvio Salierno.
-//  Copyright (c) 2013 Silvio Salierno. All rights reserved.
+//  Created by Centro Community Partners.
+//  Copyright (c) 2013 Centro Community Partners. All rights reserved.
 //
 
 #import "SSUtils.h"
@@ -117,8 +117,8 @@
     } else if ([tableView tag] == 3000 && [indexPath isEqual:viewProfile3000]) {
         [self performSegueWithIdentifier:@"ViewProfile" sender:self];
     } else if ([tableView tag] == 3000 && [indexPath isEqual:editProfile3000]) {
-        UIBarButtonItem *nextScreenBackButton = [[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStyleBordered target:self action:nil];
-        self.navigationItem.backBarButtonItem = nextScreenBackButton;
+        //UIBarButtonItem *nextScreenBackButton = [[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStyleBordered target:self action:nil];
+        //self.navigationItem.backBarButtonItem = nextScreenBackButton;
         [self performSegueWithIdentifier:@"EditProfile" sender:self];
     } else if ([tableView tag] == 3000 && [indexPath isEqual:about3000]) {
         [self performSegueWithIdentifier:@"AboutCENTRO" sender:self];
@@ -147,7 +147,7 @@
         return nil;
     }
 
-    headerLabel.attributedText = [SSUtils attributtedStringForHeaderInTableView:headerString];
+    headerLabel.attributedText = [SSUtils attributedStringForHeaderInTableView:headerString];
     [headerLabel setBackgroundColor:[UIColor clearColor]];
 
     return headerLabel;
@@ -180,20 +180,20 @@
         }
         
         NSString *fullName = [NSString stringWithFormat:@"%@ %@", firstName, lastName];
-        self.profileSummaryCell.textLabel.attributedText = [SSUtils attributtedStringForTitleCellTextGreen:fullName];
-        self.profileSummaryCell.detailTextLabel.attributedText = [SSUtils attributtedStringForSubTitleCellTextGray:[[SSUser currentUser] username]];
+        self.profileSummaryCell.textLabel.attributedText = [SSUtils attributedStringForTitleCellTextGreen:fullName];
+        self.profileSummaryCell.detailTextLabel.attributedText = [SSUtils attributedStringForSubTitleCellTextGray:[[SSUser currentUser] username]];
         return self.profileSummaryCell;
     } else if([tableView tag] == 3000 && [indexPath isEqual:editProfile3000]) {
-        self.editProfileCell.textLabel.attributedText = [SSUtils attributtedStringForCellTextOnlyTitle:NSLocalizedString(@"TableViewCellTitleEditProfile", nil)];
+        self.editProfileCell.textLabel.attributedText = [SSUtils attributedStringForCellTextOnlyTitle:NSLocalizedString(@"TableViewCellTitleEditProfile", nil)];
         return self.editProfileCell;
     } else if([tableView tag] == 3000 && [indexPath isEqual:logOut3000]) {
-        self.logOutCell.textLabel.attributedText = [SSUtils attributtedStringForCellTextOnlyTitle:NSLocalizedString(@"TableViewCellTitleLogOut", nil)];
+        self.logOutCell.textLabel.attributedText = [SSUtils attributedStringForCellTextOnlyTitle:NSLocalizedString(@"TableViewCellTitleLogOut", nil)];
         return self.logOutCell;
     } else if([tableView tag] == 3000 && [indexPath isEqual:about3000]) {
-        self.aboutCell.textLabel.attributedText = [SSUtils attributtedStringForCellTextOnlyTitle:NSLocalizedString(@"TableViewCellTitleAbout", nil)];
+        self.aboutCell.textLabel.attributedText = [SSUtils attributedStringForCellTextOnlyTitle:NSLocalizedString(@"TableViewCellTitleAbout", nil)];
         return self.aboutCell;
     } else if([tableView tag] == 3000 && [indexPath isEqual:feedback3000]) {
-        self.feedbackCell.textLabel.attributedText = [SSUtils attributtedStringForCellTextOnlyTitle:NSLocalizedString(@"TableViewCellTitleFeedback", nil)];
+        self.feedbackCell.textLabel.attributedText = [SSUtils attributedStringForCellTextOnlyTitle:NSLocalizedString(@"TableViewCellTitleFeedback", nil)];
         return self.feedbackCell;
     } else {
         return nil;

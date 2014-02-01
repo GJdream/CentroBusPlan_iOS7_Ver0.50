@@ -2,8 +2,8 @@
 //  UIViewController+storyboard.m
 //  CENTRO
 //
-//  Created by Marcio R. Arantes on 10/19/13.
-//  Copyright (c) 2013 Silvio Salierno. All rights reserved.
+//  Created by Centro Community Partners on 10/19/13.
+//  Copyright (c) 2013 Centro Community Partners. All rights reserved.
 //
 
 #import "UIViewController+storyboard.h"

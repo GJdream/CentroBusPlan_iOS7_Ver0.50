@@ -2,8 +2,8 @@
 //  SSActivitiesViewController.m
 //  CENTRO
 //
-//  Created by Silvio Salierno.
-//  Copyright (c) 2013 Silvio Salierno. All rights reserved.
+//  Created by Centro Community Partners.
+//  Copyright (c) 2013 Centro Community Partners. All rights reserved.
 //
 
 #import "SSActivitiesViewController.h"
@@ -120,7 +120,7 @@
         
         self.tableView.backgroundView.contentMode = UIViewContentModeCenter;
     } else {
-        UIImageView *backgroundImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bgNoLogin.png"]];
+        UIImageView *backgroundImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"CentroWelcome.png"]];
      
         self.tableView.backgroundView = backgroundImageView;
         
@@ -211,7 +211,7 @@
 {
 
     int segueNumber = indexPath.row + 1;
-    
+    NSLog(@"This is the assets segue number: %d ", segueNumber);
     if (segueNumber > 32 || segueNumber < 1) {
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
     } else {
@@ -233,7 +233,7 @@
             else {
                 completedSegueIdentifier = [NSString stringWithFormat: @"%@c", segueIdentifier];
             }
-            
+            NSLog(@" Going to completed board. This is the completed segue identifier: %@ ", completedSegueIdentifier);
             UIBarButtonItem *nextScreenBackButton = [[UIBarButtonItem alloc] initWithTitle:@"Activities" style:UIBarButtonItemStyleBordered target:self action:nil];
             self.navigationItem.backBarButtonItem = nextScreenBackButton;
             [self performSegueWithIdentifier:completedSegueIdentifier sender:self];
@@ -241,7 +241,7 @@
         } else { //else show storyboard and push initial view
             
             UIBarButtonItem *nextScreenBackButton = [[UIBarButtonItem alloc] initWithTitle:@"Activities" style:UIBarButtonItemStyleBordered target:self action:nil];
-        
+        NSLog(@"This is the  segue number right before the case statement: %d ", segueNumber);
             switch (segueNumber) {
                 case PERSONAL:
                     [self segueStoryboard:@"personal" fromVC:self Animation:YES Bundle:Nil useTransitionStyle: COVERVERT];

@@ -2,8 +2,8 @@
 //  SSPurposesViewController.m
 //  CENTRO
 //
-//  Created by Silvio Salierno.
-//  Copyright (c) 2013 Silvio Salierno. All rights reserved.
+//  Created by Centro Community Partners.
+//  Copyright (c) 2013 Centro Community Partners. All rights reserved.
 //
 
 #import "SSPurposesViewController.h"
@@ -92,6 +92,19 @@
     self.tempPurpose = (Purpose *) [self findPurposeForKind:@"IDEAL_WORLD"];
     self.purposeQuestionLabel.text = [NSString stringWithFormat:@"In an ideal world, what would %@ stand for?", self.companyName];
     self.purposeAnswerTextView.text = [self.tempPurpose purpose];
+}
+
+@synthesize backPurposeButton, nextPurposeButton;
+
+- (IBAction) doBackPurposeButton {
+    //self.window.backgroundColor = [UIColor redColor];
+    //window.backgroundColor = [UIColor redColor];
+}
+
+- (IBAction) doNextPurposeButton {
+    // [[UIApplication sharedApplication] keyWindow].backgroundColor = [UIColor greenColor];
+    //self.window.backgroundColor = [UIColor greenColor];
+    //window.backgroundColor = [UIColor greenColor];
 }
 
 
